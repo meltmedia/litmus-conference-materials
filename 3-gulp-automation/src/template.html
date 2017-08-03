@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Target IE10 phones -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title>Test example</title>
+  <style type="text/css">
+    /***************************************
+                GLOBAL STYLES
+    ****************************************/
+      .main-td {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        color: #000001;
+        line-height: 16px;
+        min-width: 600px;/*android fix*/
+      }
+
+      .h1 { font-size: 22px; line-height: 26px; color: #003479; font-weight: bold; }
+      .h2 { font-size: 16px; line-height: 20px; color: #003479; font-weight: bold; }
+      .h3 { font-size: 14px; line-height: 18px; color: #003479; font-weight: bold; }
+      .h4 { font-size: 12px; line-height: 16px; color: #003479; font-weight: bold; }
+      .h5 { font-size: 10px; line-height: 14px; color: #003479; font-weight: bold; }
+
+      .p,
+      .ul { padding-bottom: 15px; }
+
+      .li { width: 1px; }
+      .ul .li { padding-right: 5px; }
+
+      .ul .ul { padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 10px; }
+      .ul tr:first-child .li + td { width: 100%;}
+
+      .hr {
+        background-color: #b3b3b3;
+        display: block;
+        font-size: 0px;
+        height: 1px;
+        line-height: 0px;
+        padding: 0;
+      }
+      /* horizontal rule */
+ 
+      .footnote,
+      .footnote table { font-size: 10px; line-height: 13px; }
+
+      sup { line-height: 0; font-size: 75%; }
+      .webversion { color: #aeb4b7; font-size:10px; text-decoration:underline; }
+      .linkDivider { font-weight: lighter; padding-left: 6px; padding-right: 6px; }
+      .no-underline { text-decoration: none; }
+      .underline { text-decoration: underline; }
+      .bold { font-weight: bold; }
+      .no-link { color: #000001; text-decoration: none; cursor: text; }
+      .six-star { font-family: Georgia, Times, 'Times New Roman', serif; }
+      .mobile-only { display: none; max-height:0px; overflow:hidden; }
+
+      .yahoo-table-fix { margin: 0 auto; }
+      /*fixes table width issue in yahoo*/
+
+      .black { color: #000001; }  
+      .white { color: #ffffff; }
+
+      .button { border: 1px solid #711471; }
+
+      .button a { 
+        color: #ffffff;  
+        text-decoration: none; 
+        display: inline-block; 
+        padding-top: 5px; 
+        padding-right: 25px; 
+        padding-left: 25px; 
+        padding-bottom: 5px; 
+        border: 1px solid #711471; /*border hack needed for outlook clients*/
+      }
+      
+    /***************************************
+                 SPACING STYLES 
+    ****************************************/
+
+      .p0   { padding-top:0;padding-right:0;padding-bottom:0;padding-left:0; }
+      .p5   { padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px; }
+      .p10  { padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px; }
+      .p15  { padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px; }
+      .p20  { padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px; }
+      .p25  { padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px; }
+      .p30  { padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px; }
+      .p35  { padding-top:35px;padding-right:35px;padding-bottom:35px;padding-left:35px; }
+      .p40  { padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px; }
+      /* zero padding on all side*/
+
+      .ptb0  { padding-top:0;padding-bottom:0; }
+      .ptb5  { padding-top:5px;padding-bottom:5px; }
+      .ptb10 { padding-top:10px;padding-bottom:10px; }
+      .ptb15 { padding-top:15px;padding-bottom:15px; }
+      .ptb20 { padding-top:20px;padding-bottom:20px; }
+      .ptb25 { padding-top:25px;padding-bottom:25px; }
+      .ptb30 { padding-top:30px;padding-bottom:30px; }
+      .ptb35 { padding-top:35px;padding-bottom:35px; }
+      .ptb40 { padding-top:40px;padding-bottom:40px; }
+      /* Padding top and bottom */
+
+      .prl0  { padding-right:0;padding-left:0; }
+      .prl5  { padding-right:5px;padding-left:5px; }
+      .prl10 { padding-right:10px;padding-left:10px; }
+      .prl15 { padding-right:15px;padding-left:15px; }
+      .prl20 { padding-right:20px;padding-left:20px; }
+      .prl25 { padding-right:25px;padding-left:25px; }
+      .prl30 { padding-right:30px;padding-left:30px; }
+      .prl35 { padding-right:35px;padding-left:35px; }
+      .prl40 { padding-right:40px;padding-left:40px; }
+      /* Padding left and right */
+
+      .pt0  { padding-top: 0px; }
+      .pt5  { padding-top: 5px; }
+      .pt10 { padding-top: 10px; } 
+      .pt15 { padding-top: 15px; } 
+      .pt20 { padding-top: 20px; } 
+      .pt25 { padding-top: 25px; }
+      .pt30 { padding-top: 30px; }
+      .pt35 { padding-top: 35px; }
+      .pt40 { padding-top: 40px; }
+      /* padding top */
+
+      .pr0  { padding-right: 0px; } 
+      .pr5  { padding-right: 5px; }  
+      .pr10 { padding-right: 10px; }
+      .pr15 { padding-right: 15px; }
+      .pr20 { padding-right: 20px; }
+      .pr25 { padding-right: 25px; }
+      .pr30 { padding-right: 30px; }
+      .pr35 { padding-right: 35px; }
+      .pr40 { padding-right: 40px; }
+      /* padding right */
+
+      .pb5  { padding-bottom: 5px; }
+      .pb0  { padding-bottom: 0px; } 
+      .pb10 { padding-bottom: 10px; }
+      .pb15 { padding-bottom: 15px; }
+      .pb20 { padding-bottom: 20px; }
+      .pb25 { padding-bottom: 25px; }
+      .pb30 { padding-bottom: 30px; }
+      .pb35 { padding-bottom: 35px; }
+      .pb40 { padding-bottom: 40px; }
+      /* padding bottom */
+
+      .pl0  { padding-left: 0px; }
+      .pl5  { padding-left: 5px; }
+      .pl10 { padding-left: 10px; }
+      .pl15 { padding-left: 15px; }
+      .pl20 { padding-left: 20px; }
+      .pl25 { padding-left: 25px; }
+      .pl30 { padding-left: 30px; }
+      .pl35 { padding-left: 35px; }
+      .pl40 { padding-left: 40px; }
+      /* padding left */
+
+    /***************************************
+            CLIENT SPECIFIC STYLES
+    ****************************************/
+
+    /* Use on td's if you need to match line-height. NOTE: Use only on td's with text */
+    .mso-exact { mso-line-height-rule: exactly; }
+
+    .preheader-text,
+    .hide-all { display: none; font-size: 0; max-height: 0; line-height: 0; visibility: hidden;}
+    /* Used to hide elements for mobile */      
+
+    #outlook a {padding:0;} 
+    /* Force Outlook to provide a "view in browser" menu link. */
+
+    body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+
+    #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+    /* end reset */
+
+    img {display:block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; font-size: 10px;} 
+    a img { border:none; }
+    /* Some sensible defaults for images*/
+
+    .ghost-link img { display: inline-block; }
+    /* Removes unwanted linked space - only links the image */
+
+    </style>
+
+    <style type="text/css" data-embed>
+
+    /***************************************
+                GLOBAL STYLES
+    ****************************************/
+
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #000001;
+      line-height: 16px;
+    }
+    /* Render font family properly in Outlook */
+
+    table { font-size: inherit; }
+    /* Prevent user agent from overriding font size e.g. Thunderbird, Lotus Notes 8.5, AOL*/
+
+    * { line-height: inherit; }
+    /* Prevent Outlook.com from overriding line-height */
+
+    table td {border-collapse: collapse; /*mso-line-height-rule: exactly;*/ }
+    /* Outlook 07, 10 Padding issue fix
+    Bring inline: No.*/
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+    /* Disguises iOS auto links */
+
+    .mobile-only td, 
+    .mobile-only table { mso-hide:all;}
+    /* Fix to hide elements in Outlook 2007-13 issue */
+
+    .mobile-only { display: none; max-height:0px; overflow:hidden; }
+
+    /***************************************
+               MOBILE STYLES
+    ****************************************/
+    
+    @media only screen and (max-width: 37.5em) {
+
+      .main-table { width: 95% !important; }
+      .main-td { min-width: initial !important; }
+
+      .main-table table { width:100% !important; margin: 0 auto !important; }
+      
+      .block, 
+      .content { display: block; }
+      /* place content you want stacked here */
+
+      .desktop-only { display:none !important; }
+      /* hide elements for mobile */
+
+      img { max-width: 100% !important; height: auto !important; }
+      /* large images resize down according to their parent container size */
+
+      .mobile-only { display: block !important; max-height: none !important; overflow: visible !important; }
+
+      .width-auto { width: auto !important; height: auto !important; }
+       
+    }
+    </style>
+
+    <!--[if gte mso 9]>
+      <style>
+        sup { font-size: 100% !important; }
+      </style> 
+    <![endif]-->
+    
+</head>
+<body>
+
+<span class="preheader-text"></span>
+<!-- adds preheader text to build -->
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" id="backgroundTable" width="100%">
+
+    <tr>
+      <td class="main-td">
+        <table class="yahoo-table-fix main-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+
+      <!-- Start Preheader -->
+          <tr>
+            <td class="preheader">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center">
+                    <a href="#" class="webversion">
+                      <span>view web and mobile version</span>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+      <!-- End Preheader -->
+
+      <!-- Start Header -->
+          <tr>
+            <td class="header">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tr><td>ADD HEADER CONTENT </td></tr>
+                <!-- DELETE THIS TABLE ROW AND ADD YOUR OWN!!! -->
+
+              </table>
+            </td>
+          </tr>
+      <!-- End Header -->
+
+
+      <!-- Start Content -->
+          <tr>
+            <td class="content">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                 <tr><td>ADD CONTENT</td></tr>
+                  <!-- DELETE THIS ROW AND ADD YOUR OWN!!! -->
+
+              </table> 
+            </td>
+          </tr>
+      <!-- End Content -->
+
+      <!-- Start Safety -->
+          <tr>
+            <td class="safety">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                 <tr><td>ADD SAFETY CONTENT</td></tr>
+                  <!-- DELETE THIS ROW AND ADD YOUR OWN!!! -->
+
+              </table> 
+            </td>
+          </tr>
+      <!-- End Safety -->
+
+
+      <!-- Start Footer -->
+           <tr>
+             <td class="footer">
+               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  
+                  <tr><td>ADD FOOTER CONTENT</td></tr>
+                  <!-- DELETE THIS ROW AND ADD YOUR OWN!!! -->
+
+               </table> 
+             </td>
+           </tr>
+      <!-- End Footer -->
+
+        </table>
+      </td>
+    </tr>
+
+  </table>
+  <!-- end table wrapper -->
+  
+  <!-- Android hack to make it show desktop version -->
+  <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  </div>
+  
+</body>
+</html>

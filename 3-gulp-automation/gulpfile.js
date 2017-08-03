@@ -4,8 +4,8 @@ var htmlmin      = require('gulp-htmlmin');
 var emailBuilder = require('gulp-email-builder');
 var rename       = require('gulp-rename');
 
-function buildEmail(){
-  return gulp.src(['./src/template.html'])
+function buildEmail(path){
+  return gulp.src([path])
     .pipe(htmlhint({
       'tag-pair': true,
       'spec-char-escape': true,
@@ -20,12 +20,12 @@ function buildEmail(){
 
 gulp.task('watchEmail', function () {
   gulp.watch('**/template.html').on('change', function (evt) {
-    return buildEmail();
+    return buildEmail(evt.path);
   });
 });
 
 gulp.task('build', function(){
-  return buildEmail();
+  return buildEmail('./src/template.html');
 });
 
 gulp.task('default', ['watchEmail']);

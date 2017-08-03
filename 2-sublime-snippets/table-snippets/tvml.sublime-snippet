@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:${1:};height:${2:(optional)};">
+  <v:fill type="tile" src="${3:}" />
+  <v:textbox inset="0,0,0,0">
+<![endif]-->
+
+  ${0:Insert table here}
+                          
+<!--[if gte mso 9]>
+  </v:textbox>
+</v:rect>
+<![endif]-->
+
+]]></content>
+<tabTrigger>tvml</tabTrigger>
+</snippet>
+

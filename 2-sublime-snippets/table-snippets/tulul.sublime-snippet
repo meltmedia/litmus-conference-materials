@@ -1,0 +1,35 @@
+<snippet>
+  <content><![CDATA[
+<tr>
+  <td class="ul">
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="li" valign="top">&#8226;</td>
+        <td width="100%">List Example</td>
+      </tr>
+      <tr>
+        <td class="ul" colspan="2">
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="li" valign="top">&#8211;</td>
+              <td>Sub-list Example</td>
+            </tr>
+            <tr>
+              <td class="li" valign="top">&#8211;</td>
+              <td>Sub-list Example</td>
+            </tr>
+            <tr>
+              <td class="li" valign="top">&#8211;</td>
+              <td>Sub-list Example</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- end unordered list with sub-list -->
+]]></content>
+<tabTrigger>tulul</tabTrigger>
+</snippet>
+

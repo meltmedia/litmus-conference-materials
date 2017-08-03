@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+<tr>
+  <td class="image">
+    <img src="${1:Image URL}" alt="${2:Image description}" width="$3" height="$4"/>
+  </td>
+</tr>
+<!-- end image -->
+]]></content>
+<tabTrigger>timg</tabTrigger>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<tr>
+  <td class="ul">
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="li" valign="top">&#8226;</td>
+        <td>${1:List Example}</td>
+      </tr>
+      <tr>
+        <td class="li" valign="top">&#8226;</td>
+        <td>${2:List Example}</td>
+      </tr>
+      <tr>
+        <td class="li" valign="top">&#8226;</td>
+        <td>${3:List Example}</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- end unordered list -->
+]]></content>
+<tabTrigger>tul</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<tr>
+  <td class="h2">$1</td>
+</tr>
+<!-- end h2 header -->
+]]></content>
+<tabTrigger>th2</tabTrigger>
+</snippet>

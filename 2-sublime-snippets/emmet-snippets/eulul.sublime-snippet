@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+tr>td.ul[colspan=2]>table[border=0 cellpading=0 cellspacing=0]>tr*>td.li[valign=top]{&#8211;}+td|t
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>eulul</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<!-- Begin Mobile Content -->
+<tr class="mobile-only">
+  <td class="mobile-only">
+    <div class="mobile-only">
+      ${1:Insert Mobile HTML Here Bro!}
+    </div>
+  </td>
+</tr>
+<!-- End Mobile Content -->
+]]></content>
+<tabTrigger>tmobile</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<tr>
+  <td class="${1:HEADING_LEVEL}">${2:ENTER_CONTENT}</td>
+</tr>
+<!-- end ${1:HEADING_LEVEL} header -->
+]]></content>
+<tabTrigger>th</tabTrigger>
+</snippet>

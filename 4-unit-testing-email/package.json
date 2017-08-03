@@ -1,0 +1,25 @@
+{
+  "name": "litmus-conference-materials",
+  "version": "1.0.0",
+  "description": "Slide Deck: http://bit.ly/meltLitmus",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meltmedia/litmus-conference-materials.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meltmedia/litmus-conference-materials/issues"
+  },
+  "homepage": "https://github.com/meltmedia/litmus-conference-materials#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.5.0"
+  }
+}
